@@ -1,10 +1,18 @@
 <!-- début futur contenu exemple -->
-<div class="container-fluid">
+<!-- <div class="container-fluid">
   <div class="row">
     <div class="col-md-12 text-center mt-5">
       <h1>Bienvenue sur le site de Babacar Tour</h1>
       <p>Prochainement disponible. En cours de construction...</p>
     </div>
     <router-outlet></router-outlet>
-  </div>
-  <!-- fin futur contenu exemple -->
+  </div> -->
+<!-- fin futur contenu exemple -->
+
+<app-navbar></app-navbar>
+<app-sidebar></app-sidebar>
+
+<!-- Décalage du contenu si sidebar desktop visible -->
+<div class="container-fluid layout-content mt-5 ps-lg-5">
+  <router-outlet></router-outlet>
+</div>
