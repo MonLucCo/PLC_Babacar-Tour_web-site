@@ -1,6 +1,6 @@
 <!-- Sidebar fixe desktop -->
-<div class="fixe-desktop d-none d-md-block position-fixed bg-light h-100 pt-4 px-3">
-    <ul class="nav flex-column mt-3">
+<div class="sidebar-fixe position-fixed d-md-block bg-light h-100 pt-5 px-0">
+    <ul class="nav flex-column">
         <li class="nav-item"><a class="nav-link" routerLink="/accueil"><i class="fas fa-home"></i> Accueil</a></li>
         <li class="nav-item"><a class="nav-link" routerLink="/prestations"><i class="fas fa-map-marked-alt"></i>
                 Prestations</a>
@@ -13,30 +13,4 @@
         <li class="nav-item"><a class="nav-link" routerLink="/reserver"><i class="fas fa-calendar-check"></i>
                 Réserver</a></li>
     </ul>
-</div>
-
-<!-- Sidebar offcanvas mobile Bootstrap -->
-<div class="offcanvas offcanvas-end w-50" tabindex="-1" id="mobileSidebar">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title">Bienvenue sur Babacar Tour</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
-    </div>
-    <div class="offcanvas-body">
-        <ul class="nav flex-column mt-0">
-            <!-- Même structure que desktop -->
-            <li class="nav-item"><a class="nav-link" routerLink="/accueil"><i class="fas fa-home"></i> Accueil</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="/prestations"><i class="fas fa-map-marked-alt"></i>
-                    Prestations</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="/circuits"><i class="fas fa-route"></i> Circuits</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" routerLink="/tarifs"><i class="fas fa-euro-sign"></i> Tarifs</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" routerLink="/apropos"><i class="fas fa-info-circle"></i> À
-                    propos</a></li>
-            <li class="nav-item"><a class="nav-link" routerLink="/contact"><i class="fas fa-envelope"></i> Contact</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" routerLink="/reserver"><i class="fas fa-calendar-check"></i>
-                    Réserver</a></li>
-        </ul>
-    </div>
 </div>

@@ -1,0 +1,5 @@
+<section [ngStyle]="{ 'background-color': bgColor, 'padding': padding }">
+    <h2 *ngIf="title">{{ title }}</h2>
+    <p *ngIf="subtitle">{{ subtitle }}</p>
+    <ng-content>section works!</ng-content>
+</section>

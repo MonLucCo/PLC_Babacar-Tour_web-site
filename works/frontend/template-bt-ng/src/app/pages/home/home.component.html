@@ -1,0 +1,9 @@
+<app-section title="Bienvenue !" subtitle="Découvrez nos offres" bgColor="#fff">
+    <div class="d-flex flex-wrap justify-content-center">
+        <div class="col-md-3 m-2" *ngFor="let service of services">
+            <app-card [title]="service.title" [image]="service.image" [description]="service.description"
+                [icon]="service.icon">
+            </app-card>
+        </div>
+    </div>
+</app-section>

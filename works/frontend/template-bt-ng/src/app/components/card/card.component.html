@@ -1,0 +1,10 @@
+<div class="card shadow-sm">
+    <img *ngIf="image" [src]="image" class="card-img-top" alt="image de la fiche" />
+    <div class="card-body">
+        <h5 class="card-title">
+            <i *ngIf="icon" class="fas" [ngClass]="icon"></i> {{ title }}
+        </h5>
+        <p class="card-text">{{ description }}</p>
+        <ng-content>card works!</ng-content>
+    </div>
+</div>

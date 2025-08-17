@@ -1,0 +1,18 @@
+.nav-link {
+    color: #333;
+    font-size: 1.25rem;
+    padding: 0.75rem 3rem;
+    display: flex;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+
+    &:hover {
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    i {
+        margin-right: 6px;
+    }
+}
