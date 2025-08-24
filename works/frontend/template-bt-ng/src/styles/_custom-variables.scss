@@ -1,0 +1,77 @@
+/**
+ * _custom-variables.scss — v1.0.0 (2025-08-20) by PerLucCo
+ *
+ * Variables personnalisées centralisées pour Angular
+ * Préfixe cv- pour « custom-variables », adaptable à tout projet
+ * Chargées via "@use 'styles/custom-variables' as cv;" dans styles.scss
+*/
+
+@use 'sass:map' as map;
+@use 'sass:color' as c;
+
+/* 🎨 Palette Savane */
+$cv-primary : #D2B48C !default; // Sable doré
+$cv-secondary : #A0522D !default; // Ocre rouge
+$cv-success : #3CB371 !default; // Vert acacia
+$cv-danger : #970000 !default; // Sang de bœuf
+$cv-info : #6B8E23 !default; // Vert olive doux
+
+/* 🎨 Couleurs complémentaires */
+$cv-blue-mineral: #3C6E91 !default; // Bleu minéral adapté à la palette Savane
+$cv-blue-sable: #4A90E2 !default; // Bleu sable (bleu doux) adapté à la palette Savane
+$cv-blue-sable-dark: c.adjust($cv-blue-sable, $lightness: -15%) !default; // Bleu sable foncé (pour contraste ~5:1 avec #fff)
+$cv-blue-touareg: #2F5D8A !default; // Bleu touareg (tissu saharien) adapté à la palette Savane
+
+/* 🔔 Warning amélioré */
+$cv-warning : #D97706 !default; // Amber profond → boutons / texte clair
+$cv-warning-light : #FFA500 !default; // Orange vif → alertes / fonds clairs (texte sombre)
+
+/* ⚪ Neutres */
+$cv-light : #F5F5DC !default; // Beige clair
+$cv-dark : #2F4F4F !default; // Gris ardoise
+$cv-white : #FFFFFF !default; // Blanc pur
+$cv-black : #000000 !default; // Noir pur
+
+/* Fonctions d'adaptation */
+@function cv-contrast($color, $light: #FFFFFF, $dark: #000000, $threshold: 0.5) {
+    @if (c.lightness($color) > ($threshold * 100)) {
+        @return $dark;
+    }
+
+    @else {
+        @return $light;
+    }
+}
+
+/* 🎨 Map des couleurs pour Bootstrap */
+$cv-theme-colors: (
+    "primary": $cv-primary,
+    "secondary": $cv-secondary,
+    "success": $cv-success,
+    "danger": $cv-danger,
+    "info": $cv-info,
+    "warning": $cv-warning,
+    "warning-light": $cv-warning-light,
+    "light": $cv-light,
+    "dark": $cv-dark,
+
+    // 🔵 Couleurs complémentaires
+    "blue-mineral": $cv-blue-mineral,
+    "blue-sable": $cv-blue-sable,
+    "blue-sable-dark": $cv-blue-sable-dark,
+    "blue-touareg": $cv-blue-touareg) !default;
+
+/* 🖋️ Typographie */
+$cv-font-family-base : 'Lato',
+sans-serif !default;
+$cv-headings-font-family : 'Playfair Display',
+serif !default;
+$cv-headings-font-weight : 700 !default;
+$cv-headings-color : #212529 !default;
+
+/* 🧱 Fond et texte */
+$cv-body-bg : #f8f9fa !default;
+$cv-body-color : #333 !default;
+
+/* 🔘 Boutons */
+$cv-btn-border-radius : 0.5rem !default;

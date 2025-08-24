@@ -1,0 +1,33 @@
+@use 'sass:map' as map;
+@use 'sass:color' as c;
+@use 'styles/theme' as *;
+
+.style-guide {
+    padding: 2rem 1rem;
+
+    h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    section {
+        margin-top: 2rem;
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .btn-showcase {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    // .btn-link {
+    //     color: map.get($theme-colors, "blue-sable") !important;
+
+    //     &:hover {
+    //         color: c.adjust(map.get($theme-colors, "blue-sable"), $lightness: -10%) !important;
+    //     }
+    // }
+}
