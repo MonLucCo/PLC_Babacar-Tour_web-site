@@ -1,0 +1,15 @@
+<section class="a-propos">
+    <h1>À propos de {{ babacar.nom }}</h1>
+    <p>{{ babacar.description }}</p>
+
+    <blockquote class="citation">
+        {{ babacar.citation }}
+    </blockquote>
+
+    <div class="facebook">
+        <p>Suivez Babacar sur Facebook (~{{ babacar.facebook.abonnes }} abonnés) :</p>
+        <a [href]="babacar.facebook.lien" target="_blank" rel="noopener noreferrer">
+            Page Facebook officielle
+        </a>
+    </div>
+</section>

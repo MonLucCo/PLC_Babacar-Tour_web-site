@@ -72,6 +72,15 @@ $cv-headings-color : #212529 !default;
 /* 🧱 Fond et texte */
 $cv-body-bg : #f8f9fa !default;
 $cv-body-color : #333 !default;
+$cv-page-bg-color-clair: #f5f0e6 !default;
+$cv-page-bg-color-rose: #fdf6f0 !default;
+$cv-page-bg-color-reposant: #e6f0f8 !default;
+$cv-page-bg-color-doux: #eceae4 !default;
+$cv-page-bg-color: $cv-page-bg-color-doux !default;
 
 /* 🔘 Boutons */
 $cv-btn-border-radius : 0.5rem !default;
+
+/* 🃏 Dimensions */
+$cv-navbar-height: 70px;
+$cv-sidebar-width: 240px;

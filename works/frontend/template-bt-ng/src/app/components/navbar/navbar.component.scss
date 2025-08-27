@@ -1,5 +1,5 @@
 .navbar {
-    height: 70px;
+    // height: var(--navbar-height);
     box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
     z-index: 1040;
 
@@ -19,7 +19,7 @@
 
     .navbar-logo img {
         transition: transform 0.3s ease;
-        height: 70px;
+        height: var(--navbar-height);
         object-fit: contain;
         cursor: pointer;
 
@@ -30,9 +30,9 @@
 
 }
 
-/* fixe la largeur du logo à 240px à partir du breakpoint md */
+/* fixe la largeur du logo à la largeur de la sidebar (240px) à partir du breakpoint md */
 @media (min-width: 768px) {
     .navbar-logo {
-        width: 240px;
+        width: var(--sidebar-width);
     }
 }

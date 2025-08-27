@@ -1,0 +1,26 @@
+.a-propos {
+    padding: 2rem;
+    line-height: 1.6;
+
+    .citation {
+        font-style: italic;
+        color: #555;
+        border-left: 4px solid var(--btn-link-color);
+        padding-left: 1rem;
+        margin: 1rem 0;
+    }
+
+    .facebook {
+        margin-top: 2rem;
+
+        a {
+            color: var(--btn-link-color);
+            text-decoration: none;
+
+            &:hover {
+                color: var(--btn-link-hover-color);
+                text-decoration: underline;
+            }
+        }
+    }
+}

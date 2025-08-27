@@ -1,38 +1,14 @@
-<!-- Version 1 début -->
-<!-- début futur contenu exemple -->
-<!-- <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 text-center mt-5">
-          <h1>Bienvenue sur le site de Babacar Tour</h1>
-          <p>Prochainement disponible. En cours de construction...</p>
-        </div>
-        <router-outlet></router-outlet>
-      </div> -->
-<!-- fin futur contenu exemple -->
-<!-- Version 1 fin -->
-
-<!-- Version 2 début -->
-<!-- <app-navbar></app-navbar> -->
-<!-- <app-sidebar></app-sidebar> -->
-
-<!-- Décalage du contenu si sidebar desktop visible -->
-<!-- <div class="container-fluid layout-content mt-5 ps-lg-5">
-      <router-outlet></router-outlet>
-    </div> -->
-<!-- Version 2 fin -->
-
-
 <div class="container">
   <app-navbar></app-navbar>
 
   <div class="d-flex flex-column flex-md-row">
     <!-- Sidebar visible à partir de md -->
-    <aside class="col-md-2 d-none d-md-block bg-light px-3 pt-5">
-      <app-sidebar></app-sidebar>
-    </aside>
+    <!-- <aside> -->
+    <app-sidebar class="sidebar d-none d-md-block"></app-sidebar>
+    <!-- </aside> -->
 
     <!-- Contenu principal -->
-    <main class="col-12 col-md-10 px-4 pt-5">
+    <main class="main-content flex-grow-1">
       <router-outlet></router-outlet>
     </main>
   </div>

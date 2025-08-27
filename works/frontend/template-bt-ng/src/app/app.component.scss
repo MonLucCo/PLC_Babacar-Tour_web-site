@@ -1,4 +1,19 @@
-aside {
-    min-width: 240px;
-    max-width: 240px;
+.sidebar {
+    width: var(--sidebar-width);
+    flex: 0 0 auto;
+    height: calc(100vh - var(--navbar-height));
+    position: sticky;
+    top: var(--navbar-height);
+    overflow-y: auto;
+}
+
+.main-content {
+    margin-top: var(--navbar-height);
+    min-height: calc(100vh - var(--navbar-height));
+    flex: 1 1 auto;
+    background-color: var(--page-bg-color); // Couleur de fond claire
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 2rem; // Espace en haut
+    padding-bottom: 2rem; // Espace en bas
 }

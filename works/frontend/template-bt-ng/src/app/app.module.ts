@@ -11,6 +11,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { MobileSidebarComponent } from './components/mobile-sidebar/mobile-sidebar.component';
 import { StyleGuideComponent } from './pages/style-guide/style-guide.component';
 import { ColorSwatchComponent } from './shared/color-swatch/color-swatch.component';
+import { AProposComponent } from './pages/a-propos/a-propos.component';
+import { Erreur404Component } from './pages/erreur-404/erreur-404.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ColorSwatchComponent } from './shared/color-swatch/color-swatch.compone
     HomeComponent,
     MobileSidebarComponent,
     StyleGuideComponent,
-    ColorSwatchComponent
+    ColorSwatchComponent,
+    AProposComponent,
+    Erreur404Component
   ],
   imports: [
     BrowserModule,
