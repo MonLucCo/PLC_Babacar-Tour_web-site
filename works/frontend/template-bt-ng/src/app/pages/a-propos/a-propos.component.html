@@ -1,15 +1,26 @@
-<section class="a-propos">
-    <h1>À propos de {{ babacar.nom }}</h1>
-    <p>{{ babacar.description }}</p>
+<section class="a-propos container">
+    <h1>À propos</h1>
 
-    <blockquote class="citation">
-        {{ babacar.citation }}
-    </blockquote>
+    <div class="row align-items-center gy-4">
+        <!-- Photo -->
+        <div class="col-12 col-md-4 text-center">
+            <img [src]="babacar.photo" alt="Photo de Babacar" class="img-fluid rounded shadow-sm" width="250">
+        </div>
 
-    <div class="facebook">
-        <p>Suivez Babacar sur Facebook (~{{ babacar.facebook.abonnes }} abonnés) :</p>
-        <a [href]="babacar.facebook.lien" target="_blank" rel="noopener noreferrer">
-            Page Facebook officielle
-        </a>
+        <!-- Texte -->
+        <div class="col-12 col-md-8">
+            <p>{{ babacar.description }}</p>
+
+            <blockquote class="citation">
+                {{ babacar.citation }}
+            </blockquote>
+
+            <div class="facebook">
+                <p>Suivez-moi sur Facebook (~{{ babacar.facebook.abonnes }} abonnés) :</p>
+                <a [href]="babacar.facebook.lien" target="_blank" rel="noopener noreferrer">
+                    Page Facebook officielle
+                </a>
+            </div>
+        </div>
     </div>
 </section>

@@ -1,19 +1,15 @@
-<div class="container">
+<div class="layout d-flex flex-column">
   <app-navbar></app-navbar>
 
-  <div class="d-flex flex-column flex-md-row">
-    <!-- Sidebar visible à partir de md -->
-    <!-- <aside> -->
-    <app-sidebar class="sidebar d-none d-md-block"></app-sidebar>
-    <!-- </aside> -->
+  <div class="content-wrapper">
+    <app-sidebar class="sidebar d-md-block"></app-sidebar>
 
-    <!-- Contenu principal -->
-    <main class="main-content flex-grow-1">
+    <main class="main-content">
       <router-outlet></router-outlet>
     </main>
   </div>
 
-  <!-- Footer (à intégrer plus tard) -->
+  <app-footer class="content-footer"></app-footer>
 </div>
 
 <!-- Sidebar mobile en offcanvas -->

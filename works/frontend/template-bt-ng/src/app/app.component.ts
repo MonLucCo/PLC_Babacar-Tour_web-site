@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'template-bt-ng';
-  version = '0.1.0';
+
 }

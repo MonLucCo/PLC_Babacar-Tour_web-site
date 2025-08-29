@@ -1,6 +1,12 @@
 .a-propos {
-    padding: 2rem;
+    padding: 2rem 1rem;
     line-height: 1.6;
+
+    img {
+        border-radius: 8px;
+        max-width: 100%;
+        height: auto;
+    }
 
     .citation {
         font-style: italic;

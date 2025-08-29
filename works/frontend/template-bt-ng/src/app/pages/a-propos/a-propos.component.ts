@@ -9,11 +9,13 @@ import { Component } from '@angular/core';
 export class AProposComponent {
   babacar = {
     nom: 'Babacar Tour',
-    description: `Babacar est un chauffeur-guide indépendant basé au Sénégal. Il propose des excursions authentiques, des circuits culturels et des transferts personnalisés.`,
-    citation: `“Voyager avec Babacar, c’est découvrir le Sénégal avec le cœur.” – Client`,
+    description: `Je suis Babacar, chauffeur-guide indépendant basé au Sénégal. Passionné par mon pays, je propose des excursions authentiques, des circuits culturels et des transferts personnalisés pour vous faire découvrir le Sénégal avec le cœur.`,
+    citation: `“Voyager avec moi, c’est découvrir le Sénégal avec le cœur.”`,
+    photo: 'assets/images/babacar.jpg',
     facebook: {
       abonnes: 80,
-      lien: 'https://www.facebook.com/people/Babacar-Tour%C3%A9/100052203122121/'
+      lien: 'https://www.facebook.com/p/Babacar-Guide-au-S%C3%A9n%C3%A9gal-100063878642804'
     }
   };
 }
+

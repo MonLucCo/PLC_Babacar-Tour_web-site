@@ -13,6 +13,14 @@ import { StyleGuideComponent } from './pages/style-guide/style-guide.component';
 import { ColorSwatchComponent } from './shared/color-swatch/color-swatch.component';
 import { AProposComponent } from './pages/a-propos/a-propos.component';
 import { Erreur404Component } from './pages/erreur-404/erreur-404.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { MentionsLegalesComponent } from './pages/mentions-legales/mentions-legales.component';
+import { PageConstructionComponent } from './shared/page-construction/page-construction.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { PrestationsComponent } from './pages/prestations/prestations.component';
+import { CircuitsComponent } from './pages/circuits/circuits.component';
+import { TarifsComponent } from './pages/tarifs/tarifs.component';
+import { ReserverComponent } from './pages/reserver/reserver.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +34,15 @@ import { Erreur404Component } from './pages/erreur-404/erreur-404.component';
     StyleGuideComponent,
     ColorSwatchComponent,
     AProposComponent,
-    Erreur404Component
+    Erreur404Component,
+    FooterComponent,
+    MentionsLegalesComponent,
+    PageConstructionComponent,
+    ContactComponent,
+    PrestationsComponent,
+    CircuitsComponent,
+    TarifsComponent,
+    ReserverComponent
   ],
   imports: [
     BrowserModule,

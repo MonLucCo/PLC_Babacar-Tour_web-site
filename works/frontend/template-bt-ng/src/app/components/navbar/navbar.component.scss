@@ -31,8 +31,8 @@
 }
 
 /* fixe la largeur du logo à la largeur de la sidebar (240px) à partir du breakpoint md */
-@media (min-width: 768px) {
-    .navbar-logo {
-        width: var(--sidebar-width);
-    }
-}
+// @media (min-width: 768px) {
+//     .navbar-logo {
+//         width: var(--sidebar-width);
+//     }
+// }
