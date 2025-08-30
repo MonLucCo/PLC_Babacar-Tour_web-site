@@ -1,0 +1,16 @@
+<div class="layout d-flex flex-column">
+  <app-navbar></app-navbar>
+
+  <div class="content-wrapper">
+    <app-sidebar class="sidebar d-md-block"></app-sidebar>
+
+    <main class="main-content">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+
+  <app-footer class="content-footer"></app-footer>
+</div>
+
+<!-- Sidebar mobile en offcanvas -->
+<app-mobile-sidebar></app-mobile-sidebar>

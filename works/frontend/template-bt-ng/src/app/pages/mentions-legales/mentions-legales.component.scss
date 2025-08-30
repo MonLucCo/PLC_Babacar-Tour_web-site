@@ -1,0 +1,23 @@
+/* mentions-legales.component.scss */
+.mentions-legales {
+    padding: 2rem;
+    line-height: 1.6;
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 0.75rem;
+    }
+
+    a {
+        color: var(--btn-link-color);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            color: var(--btn-link-hover-color);
+        }
+    }
+}
