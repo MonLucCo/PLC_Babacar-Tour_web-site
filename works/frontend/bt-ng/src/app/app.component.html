@@ -1,10 +1,16 @@
-<!-- app.component.html — version v0 (pré-integration Stellar) -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12 text-center mt-5">
-      <h1>Bienvenue sur le site de Babacar Tour</h1>
-      <p>Prochainement disponible. En cours de construction...</p>
-    </div>
-    <router-outlet></router-outlet>
+<div class="layout d-flex flex-column">
+  <app-navbar></app-navbar>
+
+  <div class="content-wrapper">
+    <app-sidebar class="sidebar d-md-block"></app-sidebar>
+
+    <main class="main-content">
+      <router-outlet></router-outlet>
+    </main>
   </div>
+
+  <app-footer class="content-footer"></app-footer>
 </div>
+
+<!-- Sidebar mobile en offcanvas -->
+<app-mobile-sidebar></app-mobile-sidebar>

@@ -1,0 +1,12 @@
+<div class="color-swatch-container">
+    <div class="swatch" *ngFor="let color of colors" [ngStyle]="{ 'background-color': color.hex }">
+        <div class="label">
+            <div class="line1">
+                {{ color.key }} : {{ color.hex }}
+            </div>
+            <div class="line2">
+                <code>var(--bs-{{ color.key }})</code>
+            </div>
+        </div>
+    </div>
+</div>

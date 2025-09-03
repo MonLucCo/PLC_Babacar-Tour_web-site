@@ -1,0 +1,33 @@
+<div class="style-guide container">
+    <h1>Guide des styles</h1>
+
+    <!-- Palette de couleurs -->
+    <section id="colors">
+        <h2>Palette</h2>
+        <app-color-swatch></app-color-swatch>
+    </section>
+
+    <!-- Typographie -->
+    <section id="typography">
+        <h2>Typographie</h2>
+        <ng-container *ngFor="let h of headings">
+            <ng-container [ngSwitch]="h.tag">
+                <h1 *ngSwitchCase="'h1'">{{ h.label }}</h1>
+                <h2 *ngSwitchCase="'h2'">{{ h.label }}</h2>
+                <h3 *ngSwitchCase="'h3'">{{ h.label }}</h3>
+            </ng-container>
+        </ng-container>
+        <p>Paragraphe de texte pour visualiser le corps de texte standard.</p>
+        <blockquote>Un exemple de citation pour voir le style de blockquote.</blockquote>
+    </section>
+
+    <!-- Boutons -->
+    <section id="buttons">
+        <h2>Boutons</h2>
+        <div class="btn-showcase">
+            <button *ngFor="let variant of buttonVariants" class="btn {{ variant }}">
+                {{ variant.replace('btn-', '').trim() | titlecase }}
+            </button>
+        </div>
+    </section>
+</div>

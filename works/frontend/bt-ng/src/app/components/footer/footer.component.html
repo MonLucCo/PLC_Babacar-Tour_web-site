@@ -1,0 +1,80 @@
+<footer class="footer">
+    <!-- Bloc 1 : contenu principal -->
+    <div class="footer-main d-flex bg-primary text-muted py-4 border-top">
+        <div class="container">
+            <div class="row gy-4 justify-content-center align-items-center text-center text-md-start">
+                <!-- Logo + copyright + réseaux sociaux -->
+                <div class="col-6 col-md-4 d-flex flex-column align-items-center justify-content-between">
+                    <h6 class="fw-bold visually-hidden">Babacar Tour</h6>
+                    <img src="assets/images/logo-babacar.png" alt="Logo Babacar Tour" width="120" class="mb-2">
+                    <p class="small mb-2">© 2025 Tous droits réservés</p>
+                    <div class="social d-flex d-md-none gap-2">
+                        <a href="https://www.facebook.com/p/Babacar-Guide-au-S%C3%A9n%C3%A9gal-100063878642804"
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center"
+                            title="Suivez-nous sur Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/221772014188" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center"
+                            title="Contactez-nous sur WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="col-6 col-md-4 text-md-center">
+                    <h6 class="fw-bold">Navigation</h6>
+                    <ul class="list-unstyled ms-1">
+                        <li><a routerLink="/a-propos" class="btn-link text-decoration-none text-success-emphasis">À
+                                propos</a></li>
+                        <li><a routerLink="/contact"
+                                class="btn-link text-decoration-none text-success-emphasis">Contact</a></li>
+                        <li><a routerLink="/mentions-legales"
+                                class="btn-link text-decoration-none text-success-emphasis">Mentions légales</a></li>
+                    </ul>
+                </div>
+
+                <!-- Réseaux sociaux (répété pour desktop uniquement) -->
+                <div class="d-none d-md-block col-md-4 text-center">
+                    <h6 class="fw-bold">Suivez-nous</h6>
+                    <div class="social d-flex gap-2 justify-content-center">
+                        <a href="https://www.facebook.com/p/Babacar-Guide-au-S%C3%A9n%C3%A9gal-100063878642804"
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center"
+                            title="Suivez-nous sur Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/221772014188" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center"
+                            title="Contactez-nous sur WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bloc 2 : signature -->
+    <div class="footer-signature bg-secondary text-success-emphasis py-2">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small">
+
+            <!-- Signature avec lien vers erreur-404 -->
+            <div class="d-flex justify-content-center align-items-center gap-2" aria-label="Propulsé par PerLucCo">
+                <i class="fas fa-leaf"></i>
+                <a routerLink="/erreur-404" class="text-decoration-none text-success-emphasis">
+                    Propulsé par <strong>PerLucCo</strong>
+                </a>
+                <i class="fas fa-globe-africa"></i>
+            </div>
+
+            <!-- Version de l'application -->
+            <div class="text-muted text-end mt-2 mt-md-0 small" aria-label="Version de l'application">
+                {{title}} : v{{version}} - {{templateName}} : v{{versionTemplate}}
+            </div>
+        </div>
+    </div>
+
+</footer>
