@@ -1,0 +1,71 @@
+// 🔗 1. Chargement des variables
+@use 'styles/custom-variables' as custom;
+@use 'sass:map' as map;
+@use 'sass:color' as c;
+
+$theme-colors: custom.$cv-theme-colors;
+$utilities-colors: custom.$cv-theme-colors;
+
+// 🔗 2. Définition des overrides supplémentaires (typo, body, boutons, etc.)
+$btn-link-color: map.get($theme-colors, "blue-sable-dark");
+$btn-link-hover-color: c.adjust($btn-link-color, $lightness: -15%);
+$btn-link-disabled-color: c.adjust($btn-link-color, $lightness: 20%);
+
+// 🔗 3. Application des overrides à BS
+@use 'bootstrap/scss/bootstrap' with ( // couleurs
+    $theme-colors: $theme-colors,
+    $utilities-colors: $utilities-colors,
+    // Optionnel : activer les utilitaires de background
+    $utilities: ("background-color": (property: background-color,
+            class: bg,
+            values: $utilities-colors ),
+        "color": (property: color,
+            class: text,
+            values: $utilities-colors )),
+    // Typographie
+    $font-family-sans-serif: custom.$cv-font-family-base,
+    $headings-font-family: custom.$cv-headings-font-family,
+    $headings-font-weight: custom.$cv-headings-font-weight,
+    $headings-color: custom.$cv-headings-color,
+    // Fond et texte
+    $body-bg: custom.$cv-body-bg,
+    $body-color: custom.$cv-body-color,
+    // Boutons
+    $btn-link-color: $btn-link-color,
+    $btn-link-hover-color: $btn-link-hover-color,
+    $btn-border-radius: custom.$cv-btn-border-radius);
+
+
+// 🔗 4. Re-exporte tout pour permettre l'accès
+@forward 'styles/custom-variables';
+@forward 'bootstrap/scss/bootstrap';
+
+// 🔗 5. Variables CSS globales (pour usage dans les composants Angular)
+:root {
+    --navbar-height: #{custom.$cv-navbar-height};
+    --sidebar-width: #{custom.$cv-sidebar-width};
+    --primary: #{map.get($theme-colors, "primary")};
+    --secondary: #{map.get($theme-colors, "secondary")};
+    --success: #{map.get($theme-colors, "success")};
+    --danger: #{map.get($theme-colors, "danger")};
+    --warning: #{map.get($theme-colors, "warning")};
+    --warning-light: #{map.get($theme-colors, "warning-light")};
+    --info: #{map.get($theme-colors, "info")};
+    --light: #{map.get($theme-colors, "light")};
+    --dark: #{map.get($theme-colors, "dark")};
+    --blue-mineral: #{map.get($theme-colors, "blue-mineral")};
+    --blue-sable: #{map.get($theme-colors, "blue-sable")};
+    --blue-sable-dark: #{map.get($theme-colors, "blue-sable-dark")};
+    --blue-touareg: #{map.get($theme-colors, "blue-touareg")};
+    --body-bg: #{custom.$cv-body-bg};
+    --body-color: #{custom.$cv-body-color};
+    --font-family-base: #{custom.$cv-font-family-base};
+    --headings-font-family: #{custom.$cv-headings-font-family};
+    --headings-font-weight: #{custom.$cv-headings-font-weight};
+    --headings-color: #{custom.$cv-headings-color};
+    --btn-border-radius: #{custom.$cv-btn-border-radius};
+    --btn-link-color: #{$btn-link-color};
+    --btn-link-hover-color: #{$btn-link-hover-color};
+    --btn-link-disabled-color: #{$btn-link-disabled-color};
+    --page-bg-color: #{custom.$cv-page-bg-color};
+}

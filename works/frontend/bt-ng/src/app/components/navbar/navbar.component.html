@@ -1,0 +1,34 @@
+<nav class="navbar navbar-light bg-light fixed-top py-0">
+    <div class="container d-flex align-items-center">
+
+        <!-- COLONNE 1 : logo (fixe 240px en md+, auto en mobile) -->
+        <div class="navbar-logo flex-shrink-0">
+            <img src="assets/images/logo-babacar.png" alt="Logo" class="d-block" routerLink="/" />
+        </div>
+
+        <!-- COLONNE 2 : contenu qui prend le reste -->
+        <div class="flex-grow-1 d-flex align-items-center flex-row">
+
+            <!-- message centré en md+, caché en mobile -->
+            <div class="d-none d-md-flex flex-fill justify-content-center">
+                <span class="fw-bold fs-5 text-center">Bienvenue sur Babacar Tour !</span>
+            </div>
+
+            <!-- icônes + bouton hamburger -->
+            <div class="d-flex align-items-center gap-3 ms-auto">
+                <i class="fas fa-search" title="Recherche"></i>
+                <i class="fas fa-globe" title="Langue"></i>
+                <i class="fas fa-shopping-cart" title="Panier"></i>
+                <i class="fas fa-envelope" title="Messages"></i>
+                <i class="fas fa-user" title="Profil"></i>
+
+                <!-- hamburger mobile only -->
+                <button class="btn p-0 d-md-none" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar"
+                    aria-label="Menu">
+                    <i class="fas fa-bars fs-4"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</nav>
